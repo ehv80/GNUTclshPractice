@@ -1,0 +1,5 @@
+#!/usr/bin/tclsh
+# Ejemplo 4: Uso de "puts" y "expr" para expresiones matemáticas
+set number 10
+puts [ expr $number+10+100/1 ]
+

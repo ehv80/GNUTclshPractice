@@ -1,0 +1,15 @@
+#!/usr/bin/tclsh
+# Ejemplo 3: uso de arreglos en TCL
+
+# Inicialización de cada elemento del arreglo
+set edad_familia(padre) 45	;# Valoriza mediante "set <nombre-del-arreglo>(<nombre-del-indice>) <valor> "
+set edad_familia(madre) 43
+set edad_familia(hijo_mayor) 15
+set edad_familia(hijo_menor) 13
+
+# Visualización de los valores de cada elemento del arreglo en pantalla
+puts "La edad del Padre es: $edad_familia(padre) ";# Muestra valor  mediante "$<nombre-del-arreglo>(<nombre-del-indice>)"
+puts "La edad de la Madre es: $edad_familia(madre) "
+puts "La edad del hijo mayor es: $edad_familia(hijo_mayor) "
+puts "La edad del hijo menor es: $edad_familia(hijo_menor) "
+

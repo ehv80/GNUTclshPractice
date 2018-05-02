@@ -1,0 +1,9 @@
+#!/usr/bin/tclsh
+# Sintaxis del while en tclsh: 		while { <condicion> } {
+#					<sentencias>
+#					}
+puts "Ingrese numeros, 999 para terminar"
+gets stdin entrada ;# Inicializa la variable entrada mediante teclado
+while { $entrada != 999 } {
+gets stdin entrada
+}

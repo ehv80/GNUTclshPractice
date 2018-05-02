@@ -1,0 +1,8 @@
+#!/usr/bin/tclsh
+# Sintaxis para leer un archivo en tclsh:	set <archivo> [ open "<ruta-del-achivo>" r]
+# Asi el contenido de "<ruta-del-archivo>" se asigna a la variable <archivo>
+
+set archivo [ open "/etc/ftpusers" r]
+while { [gets $archivo variable] != -1 } {
+puts $variable
+}

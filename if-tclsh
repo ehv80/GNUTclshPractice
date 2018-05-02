@@ -1,0 +1,19 @@
+#!/usr/bin/tclsh
+# Ejemplo 6: Uso del if en tclsh
+# Sintaxis: 	if { <condición> } {
+#		<sentencias>
+#	    	}
+puts "Introduzca un número entre 0 y 9"
+gets stdin number
+if { $number >= 0 && $number <= 9 } {
+	if { $number < 5 } {
+		puts " $number es menor que 5"
+	}
+	if { $number > 5 } {
+		puts " $number es mayor que 5"
+	}
+}
+if { $number < 0 || $number > 9 } {
+puts "DEBE INTRODUCIR UN NÚMERO COMPRENDIDO ENTRE 0 Y 9 !!!"
+}
+

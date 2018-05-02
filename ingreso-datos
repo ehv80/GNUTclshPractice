@@ -1,0 +1,7 @@
+#!/usr/bin/tclsh
+# Ejemplo 5: Uso de "gets" para introducir datos
+# Sintaxis: gets <flujo> <variable>
+# Para entrada por teclado: gets stdin <variable>
+puts "Ingrese un número"
+gets stdin number
+puts "Usted ingresó: $number "

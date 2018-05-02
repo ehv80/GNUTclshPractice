@@ -1,0 +1,42 @@
+#!/usr/bin/tclsh
+# Ejemplo: Guardar datos en un archivo
+
+######################################
+#	DEFINICIÓN DE VARIABLES	     #
+######################################
+
+set archivo [open "mi_archivo" a]	;#opcion "a" agrega al final
+set nombre " "
+set apellido " "
+set direccion " "
+set telefono " "
+
+######################################
+#	INGRESO DE DATOS	     #
+######################################
+
+puts -nonewline "Nombre: "	;# Cuando usa "-nonewline" en "puts" luego debe ir "flush stdout"
+flush stdout
+gets stdin nombre
+
+puts -nonewline "Apellido: "
+flush stdout
+gets stdin apellido
+
+puts -nonewline "Direccion: "
+flush stdout
+gets stdin direccion
+
+puts -nonewline "Teléfono: "
+flush stdout
+gets stdin telefono
+
+######################################
+#ESCRITURA DE LOS DATOS EN EL ARCHIVO#
+######################################
+
+puts "Guardando los datos en el archivo..."
+puts $archivo "	$apellido , 	$nombre 	$direccion 	$telefono "
+puts "Completo."
+
+# Mucho cuidado: NO USAR ACENTOS EN LOS NOMBRES DE LAS VARIABLES!!!

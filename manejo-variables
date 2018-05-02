@@ -1,0 +1,3 @@
+#!/usr/bin/tclsh
+set datos 10 ;# En tclsh las variables son cadenas de texto. Valoriza a datos con 10
+puts " La variable datos contiene: $datos "

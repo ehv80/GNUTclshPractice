@@ -1,0 +1,14 @@
+#!/usr/bin/tclsh
+# Sintaxis del for en tclsh:	for { <inicialización> } { <condición> } { <incremento> } {
+#				<sentencias>
+#				}
+
+for { set x 1 } { $x <= 10 } { incr x } {
+puts "Número: $x"
+}
+
+# Se puede dejar sin completar alguno de los contenidos entre llaves
+for { set y 11 } { $y <= 20 } { } {
+puts "Número: $y"
+incr y					;# incr y aumenta en 1 a y
+}

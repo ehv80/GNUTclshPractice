@@ -1,0 +1,4 @@
+#!/usr/bin/tclsh
+# Ejemplo 1: Hola mundo en "TOOL COMMAND LANGUAJE"
+puts "¡Hola Mundo! " ;# una sentencia seguida de un comentario necesita entre ellos un ;
+# "puts" similar al "echo" de bash	

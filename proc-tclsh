@@ -1,0 +1,14 @@
+#!/usr/bin/tclsh
+# Sintaxis de una función: proc <nombre_función> <argumento>
+
+set nombre "nada"
+
+proc imprimir_nombre cadena {		;# La función se invoca mediante 
+puts "Entonces su nombre es: $cadena"	;# imprimir_nombre <cadena>
+}
+
+puts -nonewline "Su nombre: "
+flush stdout
+gets stdin nombre
+
+imprimir_nombre	$nombre		;#invocacion de la función
